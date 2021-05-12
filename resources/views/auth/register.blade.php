@@ -11,6 +11,7 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
+                        {{-- add form userid ->resources/views/auth/register.blade.php --}}
                         <div class="form-group row">
                             <label for="userid" class="col-md-4 col-form-label text-md-right">{{ __('Userid') }}</label>
 
