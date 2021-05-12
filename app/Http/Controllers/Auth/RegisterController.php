@@ -46,6 +46,7 @@ class RegisterController extends Controller
      *
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
+     * UPDATE UPDATE RegisterController->: 'userid' => ['required', 'string', 'max:255', 'unique:users']
      */
     protected function validator(array $data)
     {
@@ -62,6 +63,7 @@ class RegisterController extends Controller
      *
      * @param  array  $data
      * @return \App\Models\User
+     * UPDATE RegisterController->: 'userid' => $data['userid'], 'role_id' => 2
      */
     protected function create(array $data)
     {
